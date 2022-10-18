@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<jboss-deployment-structure>
+   <deployment>
+		<exclude-subsystems>
+			<subsystem name="webservices" />
+			<subsystem name="weld" />
+			<subsystem name="logging"/>
+		</exclude-subsystems>
+		
+		
+		<dependencies>
+               <module name="javax.xml.ws.api" export="true" />
+               <module name="javax.jws.api" export="true" />
+               <module name="com.sixdee.configuration" />
+        </dependencies>
+		
+   </deployment>
+   
+</jboss-deployment-structure> 
